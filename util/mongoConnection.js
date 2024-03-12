@@ -21,4 +21,4 @@ async function getDb() {
     return currentDb;
 }
 
-module.exports = { client, connectToMongo, disconnectFromMongo, getDb };
+module.exports = { connectToMongo, disconnectFromMongo, getDb };

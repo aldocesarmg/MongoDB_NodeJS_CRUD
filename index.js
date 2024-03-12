@@ -1,6 +1,10 @@
+const app = require('./api/server');
+const port = 3000;
+
 const mongoConnection = require('./util/mongoConnection');
 
 const listingsAndReviews_col_name = 'listingsAndReviews';
+
 
 async function main() {
     try {
@@ -22,4 +26,8 @@ async function main() {
     }
 }
 
-main();
+app.listen(port, () => {
+    console.log('Server is running...')
+});
+
+// main();
